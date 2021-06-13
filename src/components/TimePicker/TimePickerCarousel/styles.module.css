@@ -1,0 +1,13 @@
+.slider {
+    overflow-x: scroll;
+    display: flex;
+    gap: 16px;
+}
+.sliderItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 40px;
+    background-color: #fff;
+}

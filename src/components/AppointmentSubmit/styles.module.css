@@ -1,0 +1,24 @@
+.timeInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.timeInfoBold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--ion-color-dark);
+}
+
+.button {
+    font-size: 12px;
+}
+
+@media (max-width: 380px) {
+    .button {
+        font-size: 10px;
+    }
+}

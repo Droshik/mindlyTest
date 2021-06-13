@@ -1,0 +1,26 @@
+*{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ion-color-medium);
+}
+
+root{
+    /** custom vars **/
+    --ion-font-family: 'Montserrat';
+}

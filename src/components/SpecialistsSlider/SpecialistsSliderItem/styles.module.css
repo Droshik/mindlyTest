@@ -1,0 +1,23 @@
+.card {
+    max-height: fit-content;
+    max-width: fit-content;
+    padding-bottom: 10px;
+}
+.header {
+    color: var(--ion-color-dark);
+}
+
+.content {
+    height: 50%;
+}
+.img {
+    border-radius: 4px;
+    background-color: var(--ion-color-secondary);
+}
+
+.info {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

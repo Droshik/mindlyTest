@@ -1,0 +1,10 @@
+.segment{
+    justify-content: flex-end;
+    gap: 12px;
+}
+.segmentBtn{
+    flex: 0 0 20px;
+    min-width: 20px;
+    min-height: 25px;
+    height: 25px;
+}

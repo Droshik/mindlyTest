@@ -1,0 +1,31 @@
+.carouselItem{
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 86px;
+  height: 92px;
+  border: 1px solid #EDEFF2;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.04);
+}
+.Item_active{
+  border-color: var(--ion-color-primary);
+  background-color: #F0FBFF;
+  color: var(--ion-color-primary);
+}
+
+.ItemDay{
+  color: var(--ion-color-medium);
+}
+
+.Item_active .ItemDay {
+  color: inherit;
+}
+.ItemDate{
+  font-size: 24px;
+  font-weight: 700;
+}
