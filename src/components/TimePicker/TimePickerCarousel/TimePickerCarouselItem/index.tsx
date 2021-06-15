@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./styles.module.css";
-import classNames from "classnames";
+import {useTypedSelector} from "../../../../hooks/useTypedSelector";
 
-const TimePickerCarouselItem: React.FC<{ isChecked?: boolean }> = (prop) => {
+const TimePickerCarouselItem: React.FC<{time: string}> = (props) => {
+  const { currentTime } = useTypedSelector((state) => state.appointment);
+
+  const isChecked = currentTime === props.time;
   return (
-    <div
-      className={prop.isChecked ? styles.time_active : styles.time}
-    >
-      10:00
+    <div className={isChecked ? styles.time_active : styles.time}>
+        {props.time}
     </div>
   );
 };

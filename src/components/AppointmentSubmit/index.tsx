@@ -1,13 +1,16 @@
 import React from "react";
 import { IonButton, IonCard, IonCol, IonGrid, IonRow } from "@ionic/react";
 import styles from "./styles.module.css";
+import {useTypedSelector} from "../../hooks/useTypedSelector";
 
 const AppointmentSubmit: React.FC = () => {
+  const {currentTime, currentSpecialistId, currentDay}  =  useTypedSelector(state => state.appointment)
   return (
-    <form onSubmit={(event) => {
-    event.preventDefault();
-    }
-    }>
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+      }}
+    >
       <IonCard>
         <IonGrid>
           <IonRow>

@@ -1,13 +1,18 @@
 .slider {
-    overflow-x: scroll;
-    display: flex;
-    gap: 16px;
+  overflow-x: scroll;
+  display: flex;
+  gap: 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-.sliderItem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85px;
-    height: 40px;
-    background-color: #fff;
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.sliderItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 40px;
+  background-color: #fff;
 }

@@ -1,6 +1,12 @@
 .slider {
-    overflow-x: scroll;
-    display: flex;
-    gap: 16px;
-    width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
 }

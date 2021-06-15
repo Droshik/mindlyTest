@@ -6,7 +6,6 @@ import {
   IonCardTitle,
   IonCol,
   IonGrid,
-  IonImg,
   IonItem,
   IonRow,
   IonSlide,
@@ -16,7 +15,7 @@ import "./styles.module.css";
 import styles from "./styles.module.css";
 import manImg from "../../../assets/img/man.png";
 
-const SpecialistsSliderItem: React.FC = () => {
+const SpecialistsSliderItem: React.FC<{name:string, time:number, imgUrl?: string}> = (props) => {
   return (
     <IonSlide>
       <IonCard className={classNames("ion-no-margin", styles.card)}>
@@ -24,7 +23,7 @@ const SpecialistsSliderItem: React.FC = () => {
           <IonCardTitle
             className={classNames("ion-text-center", styles.header)}
           >
-            <h2>Его Имя</h2>
+            <h2>{props.name}</h2>
           </IonCardTitle>
         </IonCardHeader>
         <IonItem className={styles.content} lines="none">
@@ -41,7 +40,7 @@ const SpecialistsSliderItem: React.FC = () => {
                 </IonRow>
                 <IonRow>
                   <IonText className="ion-justify-content-center">
-                    <h3>50 минут</h3>
+                    <h3>{props.time} минут</h3>
                   </IonText>
                 </IonRow>
               </IonCol>
